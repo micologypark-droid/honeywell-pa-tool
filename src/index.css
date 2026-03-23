@@ -1,13 +1,31 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --hw-red: #EF3829;
+  --hw-red-dark: #c72d20;
+  --hw-navy: #0f1420;
+  --hw-navy-mid: #1a2035;
+  --hw-navy-light: #242d45;
+  --text-primary: #0f1420;
+  --text-secondary: #5a6275;
+  --text-muted: #8b95a8;
+  --bg-base: #f0f2f7;
+  --bg-card: #ffffff;
+  --border: #e2e6ef;
+  --border-strong: #c8ceda;
 }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  background: #f8f9fa;
-  color: #1a1a2e;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }

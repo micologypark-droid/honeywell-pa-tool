@@ -1,29 +1,58 @@
 const tabs = [
-  { id: 'accounts', label: '어카운트 관리', icon: '🏢' },
-  { id: 'pipeline', label: 'EPC 파이프라인', icon: '📊' },
-  { id: 'products', label: 'PA 제품 매칭', icon: '⚙️' },
-  { id: 'ai', label: 'AI 어시스턴트', icon: '🤖' },
+  { id: 'accounts', label: '어카운트 관리', icon: '▣' },
+  { id: 'pipeline', label: 'EPC 파이프라인', icon: '◈' },
+  { id: 'references', label: '레퍼런스 리스트', icon: '◆' },
+  { id: 'products', label: 'PA 제품 매칭', icon: '◎' },
+  { id: 'ai', label: 'AI 어시스턴트', icon: '◐' },
+  { id: 'competitors', label: '경쟁사 인텔', icon: '◑' },
+  { id: 'plan', label: '어카운트 플랜', icon: '◧' },
 ];
 
 export default function TabNav({ activeTab, onTabChange }) {
   return (
-    <nav className="bg-white border-b border-gray-200">
-      <div className="flex">
-        {tabs.map((tab) => (
+    <nav style={{
+      borderTop: '1px solid rgba(255,255,255,0.05)',
+      display: 'flex',
+      maxWidth: 1280,
+      margin: '0 auto',
+      padding: '0 24px',
+      width: '100%',
+    }}>
+      {tabs.map((tab) => {
+        const isActive = activeTab === tab.id;
+        return (
           <button
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
-            className={`flex items-center gap-2 px-6 py-4 text-sm font-medium border-b-2 transition-colors ${
-              activeTab === tab.id
-                ? 'border-[#EF3829] text-[#EF3829] bg-red-50'
-                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-            }`}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 7,
+              padding: '10px 16px',
+              fontSize: 12,
+              fontWeight: isActive ? 600 : 400,
+              color: isActive ? '#EF3829' : 'rgba(255,255,255,0.45)',
+              background: 'none',
+              border: 'none',
+              borderBottom: `2px solid ${isActive ? '#EF3829' : 'transparent'}`,
+              cursor: 'pointer',
+              transition: 'all 0.15s ease',
+              letterSpacing: '0.1px',
+              fontFamily: 'DM Sans, system-ui, sans-serif',
+              whiteSpace: 'nowrap',
+            }}
+            onMouseEnter={(e) => {
+              if (!isActive) e.currentTarget.style.color = 'rgba(255,255,255,0.75)';
+            }}
+            onMouseLeave={(e) => {
+              if (!isActive) e.currentTarget.style.color = 'rgba(255,255,255,0.45)';
+            }}
           >
-            <span>{tab.icon}</span>
+            <span style={{ fontSize: 11, opacity: 0.7 }}>{tab.icon}</span>
             {tab.label}
           </button>
-        ))}
-      </div>
+        );
+      })}
     </nav>
   );
 }
