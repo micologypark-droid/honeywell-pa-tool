@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/honeywell-pa-tool/',
   server: {
     proxy: {
       '/api/claude': {

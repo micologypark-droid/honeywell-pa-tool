@@ -1,6 +1,6 @@
 const API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
-const API_URL = '/api/claude/v1/messages';
-const MODEL = 'claude-sonnet-4-0';
+const API_URL = 'https://api.anthropic.com/v1/messages';
+const MODEL = 'claude-sonnet-4-6';
 
 export async function analyzeAccount({ company, projectName, projectType, scale }) {
   const systemPrompt = `당신은 Honeywell Process Automation의 수석 Account Manager입니다.
@@ -31,6 +31,7 @@ Emerson, ABB, Yokogawa 각각에 대해 Honeywell의 우위점을 구체적으�
       'Content-Type': 'application/json',
       'x-api-key': API_KEY,
       'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
     },
     body: JSON.stringify({
       model: MODEL,
