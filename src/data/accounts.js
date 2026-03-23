@@ -13,7 +13,7 @@ export const accounts = [
       phone: '010-1234-5678',
     },
     activeProjects: ['사우디 아람코 가스처리 플랜트', '국내 블루수소 생산시설'],
-    revenue: '약 120억',
+    revenue: 'approx. $9M',
     relationship: '전략',
     memo: 'DCS 교체 프로젝트 2027년 예정. 현재 Emerson DeltaV 사용 중 → Experion PKS 전환 가능성 검토 중. 의사결정권자는 본사 구매팀 이사급이며 기술팀 팀장 설득이 선행 필요.',
     nextAction: {
@@ -21,6 +21,12 @@ export const accounts = [
       action: 'Experion PKS 기술 세미나 초청 (삼성 판교 오피스)',
     },
     strengths: 'Saudi Aramco 레퍼런스 다수 보유, 현지 지원 체계 우수',
+    lastContact: '2026-03-06',
+    whitespace: [
+      { product: 'Honeywell Forge', opportunity: 'Saudi Aramco 현장 자산 최적화 디지털 플랫폼 도입 — APM 연계 제안 가능' },
+      { product: '계측장비 패키지', opportunity: '사우디 프로젝트 현장 스마트 계측기 통합 번들 — DCS 수주 연계 크로스셀' },
+      { product: 'Connected Worker', opportunity: '현장 작업자 안전 관리 솔루션 — 사우디 HSE 강화 트렌드 활용' },
+    ],
   },
   {
     id: 'hyundai-eng',
@@ -36,7 +42,7 @@ export const accounts = [
       phone: '010-2345-6789',
     },
     activeProjects: ['국내 수소 플랜트 DCS/SIS', 'UAE LNG 터미널 계장'],
-    revenue: '약 45억',
+    revenue: 'approx. $3.3M',
     relationship: '우선',
     memo: '수소 플랜트 프로젝트 Safety Manager 우선 협의 진행 중. 경쟁사 Yokogawa CENTUM과 비교 검토 단계. 박수석이 Honeywell 경험 있어 우호적 분위기. 가격 경쟁력과 현지 지원이 관건.',
     nextAction: {
@@ -44,6 +50,11 @@ export const accounts = [
       action: 'Safety Manager SIL 인증 자료 및 수소 레퍼런스 공유',
     },
     strengths: '수소 플랜트 Safety Manager 글로벌 레퍼런스 최다 보유',
+    lastContact: '2026-03-15',
+    whitespace: [
+      { product: 'Honeywell Forge', opportunity: '수소 플랜트 운영 최적화 디지털 레이어 — Safety 수주 후 Forge 번들 추가 제안' },
+      { product: '수소 감지 솔루션', opportunity: '수소 누출 감지 전문 센서 번들 — SIS와 연계한 안전 패키지 통합 제안' },
+    ],
   },
   {
     id: 'gs-eng',
@@ -59,7 +70,7 @@ export const accounts = [
       phone: '010-3456-7890',
     },
     activeProjects: ['여수 NCC 증설 DCS', '폴란드 석유화학 플랜트'],
-    revenue: '약 35억',
+    revenue: 'approx. $2.6M',
     relationship: '일반',
     memo: '여수 NCC 프로젝트 입찰 준비 중. ABB 800xA와 경쟁 예상. 기존에 Experion PKS 채택 경험 있음(2019년 GS칼텍스 프로젝트). 해외 현지 지원 우려 사항 해소 필요.',
     nextAction: {
@@ -67,6 +78,11 @@ export const accounts = [
       action: '여수 NCC 프로젝트 기술 제안서 초안 제출',
     },
     strengths: '국내 NCC 설비 Experion PKS 운영 레퍼런스 보유',
+    lastContact: '2026-02-14',
+    whitespace: [
+      { product: 'Safety Manager', opportunity: '여수 NCC 확장 시 SIS 통합 번들 — DCS와 패키지 수주로 단가 절감 논리 제시' },
+      { product: 'Honeywell Forge', opportunity: '여수 공장 자산 성능 관리(APM) — NCC 수주 후 디지털 연계 제안 기회' },
+    ],
   },
   {
     id: 'sk-eng',
@@ -82,7 +98,7 @@ export const accounts = [
       phone: '010-4567-8901',
     },
     activeProjects: ['발전소 디지털화 Forge 도입', '폐기물 에너지화 DCS'],
-    revenue: '약 28억',
+    revenue: 'approx. $2.1M',
     relationship: '개발',
     memo: 'Honeywell Forge 디지털 솔루션에 관심 높음. 최차장이 디지털트윈 추진 담당이며 파일럿 프로젝트 논의 중. 기존 DCS 시스템은 Siemens PCS7 사용 중이어서 Experion과 연동 가능성 검토 필요.',
     nextAction: {
@@ -90,6 +106,11 @@ export const accounts = [
       action: 'Honeywell Forge 데모 세션 진행 (SK본사)',
     },
     strengths: 'Forge 디지털 플랫폼 발전 분야 국내 도입 사례 다수',
+    lastContact: '2026-03-10',
+    whitespace: [
+      { product: 'Experion PKS', opportunity: 'Forge 파일럿 성공 후 DCS 교체 연계 협의 — Siemens PCS7 마이그레이션 로드맵 제시' },
+      { product: 'Safety Manager', opportunity: '발전소 SIL 인증 요건 강화 트렌드 — 안전 계장 솔루션 선제 제안' },
+    ],
   },
   {
     id: 'lotte-eng',
@@ -105,7 +126,7 @@ export const accounts = [
       phone: '010-5678-9012',
     },
     activeProjects: ['여수 석유화학 DCS 교체', '인도네시아 NCC 입찰'],
-    revenue: '약 22억',
+    revenue: 'approx. $1.6M',
     relationship: '일반',
     memo: '여수 공장 DCS 노후화로 교체 계획 수립 중. 현재 구형 Honeywell TDC 3000 사용 → Experion PKS 업그레이드가 가장 자연스러운 경로. 인니 NCC는 경쟁 치열하나 레퍼런스 확보 차원에서 공략 가치 있음.',
     nextAction: {
@@ -113,5 +134,10 @@ export const accounts = [
       action: 'TDC 3000 → Experion PKS 마이그레이션 비용 절감 자료 준비',
     },
     strengths: '기존 Honeywell TDC 3000 사용 고객 → 마이그레이션 경로 명확',
+    lastContact: '2026-01-20',
+    whitespace: [
+      { product: 'Safety Manager', opportunity: 'Experion PKS 교체 완료 후 SIS 통합 패키지 제안 — 단일 벤더 TCO 절감 논리' },
+      { product: 'Honeywell Forge', opportunity: '인도네시아 NCC 디지털 솔루션 번들 — 경쟁사 대비 차별화 포인트' },
+    ],
   },
 ];
