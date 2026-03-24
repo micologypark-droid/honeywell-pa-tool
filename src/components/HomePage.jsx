@@ -92,21 +92,29 @@ export default function HomePage({ onEnter }) {
         대시보드 열기
       </button>
 
-      {/* Bottom label */}
+      {/* Disclaimer */}
       <div style={{
-        position: 'absolute', bottom: 28,
-        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+        marginTop: 40,
+        background: 'rgba(239,56,41,0.08)',
+        border: '1px solid rgba(239,56,41,0.25)',
+        borderRadius: 10,
+        padding: '14px 24px',
+        textAlign: 'center',
+        maxWidth: 520,
       }}>
-        <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.15)', letterSpacing: '0.5px' }}>
-          PA Korea · Senior Account Manager
+        <div style={{ fontSize: 12, fontWeight: 700, color: '#EF3829', marginBottom: 4, letterSpacing: '0.3px' }}>
+          ⚠ 면접 포트폴리오 데모
         </div>
-        <div style={{
-          fontSize: 11, color: 'rgba(255,255,255,0.45)', letterSpacing: '0.2px',
-          background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)',
-          borderRadius: 6, padding: '5px 14px',
-        }}>
-          Personal demo project for interview purposes only · Not affiliated with or endorsed by Honeywell International Inc.
+        <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
+          본 웹앱은 면접 목적으로 개인이 제작한 데모 프로젝트입니다.<br />
+          Honeywell International Inc.와 공식적으로 무관하며,<br />
+          Honeywell의 승인·보증을 받은 제품이 아닙니다.
         </div>
+      </div>
+
+      {/* Bottom label */}
+      <div style={{ position: 'absolute', bottom: 28, fontSize: 11, color: 'rgba(255,255,255,0.15)', letterSpacing: '0.5px' }}>
+        PA Korea · Senior Account Manager
       </div>
     </div>
   );
