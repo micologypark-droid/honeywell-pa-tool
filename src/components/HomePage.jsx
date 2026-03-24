@@ -100,8 +100,12 @@ export default function HomePage({ onEnter }) {
         <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.15)', letterSpacing: '0.5px' }}>
           PA Korea · Senior Account Manager
         </div>
-        <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.1)', letterSpacing: '0.2px' }}>
-          Personal demo project for interview purposes only. Not affiliated with or endorsed by Honeywell International Inc.
+        <div style={{
+          fontSize: 11, color: 'rgba(255,255,255,0.45)', letterSpacing: '0.2px',
+          background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)',
+          borderRadius: 6, padding: '5px 14px',
+        }}>
+          Personal demo project for interview purposes only · Not affiliated with or endorsed by Honeywell International Inc.
         </div>
       </div>
     </div>
