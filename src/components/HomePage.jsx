@@ -95,10 +95,14 @@ export default function HomePage({ onEnter }) {
       {/* Bottom label */}
       <div style={{
         position: 'absolute', bottom: 28,
-        fontSize: 11, color: 'rgba(255,255,255,0.15)',
-        letterSpacing: '0.5px',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
       }}>
-        PA Korea · Senior Account Manager
+        <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.15)', letterSpacing: '0.5px' }}>
+          PA Korea · Senior Account Manager
+        </div>
+        <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.1)', letterSpacing: '0.2px' }}>
+          Personal demo project for interview purposes only. Not affiliated with or endorsed by Honeywell International Inc.
+        </div>
       </div>
     </div>
   );
