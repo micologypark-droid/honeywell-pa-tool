@@ -87,6 +87,22 @@ export default function App() {
       <main style={{ flex: 1, maxWidth: 1280, width: '100%', margin: '0 auto', padding: '24px' }}>
         <ActiveComponent />
       </main>
+
+      {/* Disclaimer Footer */}
+      <footer style={{
+        borderTop: '1px solid rgba(0,0,0,0.08)',
+        padding: '10px 24px',
+        textAlign: 'center',
+        background: '#c8d0e2',
+      }}>
+        <p style={{
+          fontSize: 10, color: '#8b95a8', margin: 0,
+          fontFamily: 'DM Sans, system-ui, sans-serif',
+          letterSpacing: '0.2px',
+        }}>
+          This is a personal demo project created for interview purposes only. Not affiliated with or endorsed by Honeywell International Inc.
+        </p>
+      </footer>
     </div>
   );
 }
